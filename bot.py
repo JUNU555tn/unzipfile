@@ -5,7 +5,7 @@
 
 
 from pyrogram import Client
-from Unzip.config import Config
+from Unzip.config import config
 
 
 app = Client(
