@@ -7,7 +7,7 @@
 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from config import AUTH_CHANNEL
+from Unzip.config import AUTH_CHANNEL
 from pyrogram.errors import *
 
 active_tasks = {}
