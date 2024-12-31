@@ -6,7 +6,7 @@ active_tasks = {}
 
 # Function to check if a user is subscribed to all required channels
 async def is_subscribed_to_all(client, user_id):
-    for channel_id in Config.FORCE_SUB_CHANNELS:
+    for channel_id in config.FORCE_SUB_CHANNELS:
         try:
             member = await client.get_chat_member(chat_id=int(channel_id), user_id=user_id)
             if member.status not in ["member", "administrator", "creator"]:
